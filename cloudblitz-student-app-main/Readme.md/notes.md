@@ -6,6 +6,81 @@ Database: RDS , Mariadb(AWS-RDS)
 Backend: SpringBoot (java 17 + maven)
 frontend: React.js
 
+
+
+file structure 
+```
+.
+├── Backend
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── mvnw
+│   ├── mvnw.cmd
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   ├── java
+│       │   │   └── com
+│       │   │       └── student
+│       │   │           └── registration
+│       │   │               └── student_registration_backend
+│       │   │                   ├── StudentRegistrationBackendApplication.java
+│       │   │                   ├── config
+│       │   │                   │   └── WebConfig.java
+│       │   │                   ├── controller
+│       │   │                   │   └── UserController.java
+│       │   │                   ├── model
+│       │   │                   │   └── User.java
+│       │   │                   └── repository
+│       │   │                       └── UserRepository.java
+│       │   └── resources
+│       │       └── application.properties
+│       └── test
+│           └── java
+│               └── com
+│                   └── student
+│                       └── registration
+│                           └── student_registration_backend
+│                               └── StudentRegistrationBackendApplicationTests.java
+├── Database
+│   ├── Dockerfile
+│   ├── README.md
+│   └── init.sql
+├── Frontend
+│   ├── Dockerfile
+│   ├── README.md
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── api
+│   │   │   └── userService.js
+│   │   ├── assets
+│   │   │   ├── Bgmain1.jpg
+│   │   │   └── bgimg.png
+│   │   ├── components
+│   │   │   ├── Modal.css
+│   │   │   ├── Modal.jsx
+│   │   │   ├── RegistrationForm.css
+│   │   │   └── RegistrationForm.jsx
+│   │   ├── hooks
+│   │   │   └── useRegistrationForm.js
+│   │   ├── main.jsx
+│   │   └── reportWebVitals.js
+│   └── vite.config.js
+├── Jenkinsfile
+├── README.md
+└── img
+    ├── Screenshot 2025-04-28 at 12.34.44#U202fPM.png
+    └── backend.png
+
+
+```
+
 ### prequisites
 one ubuntu server name: ClouBlitz-App
 instance_type: t2.medium or t2 large
