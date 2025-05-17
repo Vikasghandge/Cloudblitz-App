@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://54.91.185.15:8080/api";
+const BASE_URL = "http://13.235.42.149:8080/api";
 
 export const fetchUsers = async () => {
   try {
