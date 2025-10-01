@@ -30,7 +30,7 @@ const RegistrationForm = () => {
   return (
     <div className="registration-container">
       <h2 style={{color:"#ff8000"}}>
-        CloudBlitz <span style={{color:"#ffff"}} className="heading"> Student Registration</span>
+        VSM INFOTECH <span style={{color:"#ffff"}} className="heading"> Student Registration</span>
       </h2>
 
       <form onSubmit={handleSubmit} className="form-container">
@@ -156,6 +156,7 @@ const RegistrationForm = () => {
 };
 
 export default RegistrationForm;
+
 
 
 
