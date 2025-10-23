@@ -56,6 +56,10 @@ mvn clean package
 java -jar target/student-registration-backend-0.0.1-SNAPSHOT.jar
 ```
 
+```
+nohup java -jar target/student-registration-backend-0.0.1-SNAPSHOT.jar > backend.log 2>&1 &
+```
+
 The backend server will start at:
 `http://<your-backend-server-ip>:8080`
 
