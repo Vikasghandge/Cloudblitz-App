@@ -1,0 +1,40 @@
+nohup: ignoring input
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2025-10-23T07:39:43.496Z  INFO 5631 --- [           main] .s.StudentRegistrationBackendApplication : Starting StudentRegistrationBackendApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 5631 (/home/ubuntu/Cloudblitz-App/cloudblitz-student-app-main/Backend/target/student-registration-backend-0.0.1-SNAPSHOT.jar started by root in /home/ubuntu/Cloudblitz-App/cloudblitz-student-app-main/Backend)
+2025-10-23T07:39:43.506Z  INFO 5631 --- [           main] .s.StudentRegistrationBackendApplication : No active profile set, falling back to 1 default profile: "default"
+2025-10-23T07:39:45.284Z  INFO 5631 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-23T07:39:45.403Z  INFO 5631 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interface.
+2025-10-23T07:39:46.428Z  INFO 5631 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-23T07:39:46.455Z  INFO 5631 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-23T07:39:46.456Z  INFO 5631 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-10-23T07:39:46.531Z  INFO 5631 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-23T07:39:46.533Z  INFO 5631 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2839 ms
+2025-10-23T07:39:46.815Z  INFO 5631 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-23T07:39:46.889Z  INFO 5631 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-10-23T07:39:46.937Z  INFO 5631 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-23T07:39:47.361Z  INFO 5631 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-23T07:39:47.399Z  INFO 5631 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-23T07:39:47.623Z  INFO 5631 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@716f94c1
+2025-10-23T07:39:47.626Z  INFO 5631 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-23T07:39:47.667Z  WARN 5631 --- [           main] org.hibernate.dialect.Dialect            : HHH000511: The 8.0.42 version for [org.hibernate.dialect.MariaDBDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.4.0. Check the community dialects project for available legacy versions.
+2025-10-23T07:39:47.676Z  WARN 5631 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-23T07:39:48.936Z  INFO 5631 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-23T07:39:48.996Z  INFO 5631 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-23T07:39:49.509Z  WARN 5631 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-23T07:39:50.133Z  INFO 5631 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-23T07:39:50.167Z  INFO 5631 --- [           main] .s.StudentRegistrationBackendApplication : Started StudentRegistrationBackendApplication in 7.554 seconds (process running for 8.491)
+2025-10-23T07:48:11.926Z  INFO 5631 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-23T07:48:11.926Z  INFO 5631 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-23T07:48:11.928Z  INFO 5631 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select u1_0.id,u1_0.branch,u1_0.course,u1_0.email,u1_0.mobile_number,u1_0.name,u1_0.percentage,u1_0.student_class from user u1_0
+Hibernate: insert into user (branch,course,email,mobile_number,name,percentage,student_class) values (?,?,?,?,?,?,?)
+Hibernate: select u1_0.id,u1_0.branch,u1_0.course,u1_0.email,u1_0.mobile_number,u1_0.name,u1_0.percentage,u1_0.student_class from user u1_0
