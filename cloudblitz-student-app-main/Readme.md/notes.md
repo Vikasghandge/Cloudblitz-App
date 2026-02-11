@@ -328,6 +328,8 @@ go to aws console copy public ip of your server and add
 http://<ip-address>:80
 ```
 
+## deployemnt sucessfully done.
+
 
 
 
