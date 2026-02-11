@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://52.66.255.36:8080/api";
+const BASE_URL = "http://13.233.138.232:8080/api";
 
 export const fetchUsers = async () => {
   try {
@@ -29,5 +29,6 @@ export const deleteUser = async (id) => {
     throw error;
   }
 };
+
 
 
